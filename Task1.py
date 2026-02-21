@@ -148,7 +148,7 @@ def analyze(text, reasoning=False):
         print(f"Response: {response.content}")
         result = json.loads(response.content)
         
-        with open("Tasks/output.json", 'w') as file:
+        with open("output.json", 'w') as file:
             json.dump(result, file)
             
     except Exception as e:
